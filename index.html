@@ -1,0 +1,338 @@
+﻿<!DOCTYPE html>
+<html>
+
+<head>
+	<title>Ahrjun Chess</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link href="stylesheet.css" rel="stylesheet" type="text/css">
+	<base target="_blank">
+	<link href='https://fonts.googleapis.com/css?family=Rye' rel='stylesheet'>
+</head>
+
+<body>
+	<div class="title-menu-wrapper">
+		<div class="title">
+	  		<table style="width: 100%; padding-left: 20px; padding-right: 20px">
+			    <tr>
+			        <td>
+			        	<a href="https://drive.google.com/drive/folders/1ylKgewAsgyqv0ZflEMtxEo_IQLlWld6x?usp=drive_link">
+			        		<img src="image/logo.png" alt="Image of Logo" style="max-width: 50px; height: auto">
+			        	</a>
+			        </td>
+			        <td style="padding-left: 10px; width: 100%">
+			        	<h1 style="text-align: left">Ahrjun Chess</h1>
+			        </td>
+			        <td>
+			        	<a href="https://drive.google.com/drive/folders/1ylKgewAsgyqv0ZflEMtxEo_IQLlWld6x?usp=drive_link">
+			        		<img src="image/download.png" alt="Image of Download" style="width: auto; max-height: 50px; float: right">
+			        	</a>
+			        </td>
+				</tr>
+			</table>
+	  	</div>	
+		<div class="tab">
+	        <button class="tablinks active" onclick="openTab(event, 'tab_1')">Home</button>
+	        <button class="tablinks" onclick="openTab(event, 'tab_2')">Rules &amp; Regulations</button>
+	        <button class="tablinks" onclick="openTab(event, 'tab_3')">About Us</button>
+	        <div class="language-tabs">
+	        	<button type="submit" onclick="window.location.reload();">English</button>
+	        	<button class="tablinks" onclick="switchLanguage('chinese')">中文</button>
+	        </div>
+	    </div>	    
+	    <div class="progress-container">
+  			<div class="progress-bar"></div>
+		</div>
+	</div>
+	
+	<div id="tab_1" class="content" style="display: block">
+		<a href="https://drive.google.com/drive/folders/1ylKgewAsgyqv0ZflEMtxEo_IQLlWld6x?usp=drive_link">
+			<img src="image/first_page.png" alt="Image of Homepage" style="width: 100%; height: auto; cursor: default">
+			<div id="first-button">DOWNLOAD</div>
+		</a>
+    </div>
+    
+    <div id="tab_2" class="content" style="display: none">
+    	<table style="width: 100%">
+			<tr>
+				<td style="width: 13%"></td>
+				<td style="width: 70%">
+					<video width="100%" height="auto" controls autoplay muted>
+					  	<source src="image/chess_video.mp4" type="video/mp4">
+						Your browser does not support this video file type.
+					</video>
+				</td>
+				<td style="width: 13%"></td>
+			</tr>
+		</table>
+		<table class="special-row">
+			<tr>
+				<td style="width: 10%"></td>
+				<td style="width: 70%">
+					<h2>Set Up The Board</h2>
+					<p class="list" style="text-align: justify">Arrange the chessboard with a central line dividing it into two halves, each representing victory for either the black or white side. Players are free to place their pieces on both sides.</p>
+					<p class="list" style="text-align: justify; padding-bottom: 15px">At the beginning of the game, three black and three white pieces are initiated. This strategic positioning sets the stage for the ensuing tactical maneuvers.</p>
+				</td>
+				<td style="width: 10%"></td>
+			</tr>
+			<tr style="background-color: white">
+				<td style="width: 10%"></td>
+				<td style="width: 70%">
+					<h2>Place The Pieces</h2>
+					<p class="list" style="text-align: justify">Players can't randomly place chess pieces; there must be a connection.</p>
+					<p class="list" style="text-align: justify; padding-bottom: 15px">Two types of connections: diagonal (without distance limits, even if opponent pieces are present) and horizontal/vertical (requiring an empty space next to an initial piece).</p>
+				</td>
+				<td style="width: 10%"></td>
+			</tr>
+			<tr>
+				<td style="width: 10%"></td>
+				<td style="width: 70%">
+					<h2>Capture Opponent's Pieces</h2>
+					<p class="list" style="text-align: justify">Opponent's pieces can be captured by placing a chess piece, leaving no empty space between them.</p>
+					<p class="list" style="text-align: justify; padding-bottom: 15px">Unlike horizontal/vertical captures (one at a time), diagonal captures require two or more connected pieces without any gaps.</p>
+				</td>
+				<td style="width: 10%"></td>
+			</tr>
+			<tr style="background-color: white">
+				<td style="width: 10%"></td>
+				<td style="width: 70%">
+					<h2>Rules On How To Win</h2>
+					<p class="list" style="text-align: justify">Players win by creating a connection from the center line to the board's edge. Only horizontal and vertical connections count; diagonal connections don't lead to victory.</p>
+					<p class="list" style="text-align: justify; padding-bottom: 15px">The game concludes with a draw if moves are repeated three times, when all chess pieces are exhausted, or if all 81 grids on the board are occupied.</p>
+				</td>
+				<td style="width: 10%"></td>
+			</tr>
+		</table>
+    </div>
+    
+    <div id="tab_3" class="content" style="display: none">
+		<table style="width: 80%; margin-left: auto; margin-right: auto">
+	        <tr id="counter">
+	            <td>A</td>
+	            <td>A</td>
+	            <td>A</td>
+	            <td>A</td>
+	            <td>A</td>
+	            <td>A</td>
+	            <td>A</td>
+	            <td>A</td>
+	            <td>A</td>
+	            <td>A</td>
+	            <td>A</td>
+	            <td>A</td>
+	            <td>A</td>
+	            <td>A</td>
+	            <td>A</td>
+	            <td>A</td>
+	        </tr>
+	    </table>
+	  	<table style="width: 100%">		
+			<tr>
+				<td style="width: 10%"></td>
+				<td style="width: 31.5%" id="last-page-table">
+					<h2 style="text-align: center; position: static">
+						<a href="https://www.youtube.com/@Ahrjun_Chess" style="text-decoration: none; color: black">
+							<img src="image/youtube.png" alt="Image of YouTube Logo" style="max-width: 100px; margin-left: auto; margin-right: auto; border-radius: 25px">
+						</a>
+					</h2>
+					<h2 style="text-align: center; position: static">
+						<a href="https://www.youtube.com/@Ahrjun_Chess" style="text-decoration: none; color: black">
+							YouTube
+						</a>
+					</h2>
+					<p>Our YouTube channel serves as a comprehensive hub for enthusiasts of our gaming community. Whether you're a beginner seeking tutorials to master game tactics or an avid player looking for thrilling real-life gameplays, our channel has you covered. Immerse yourself in insightful tutorials, witness exciting gameplays by skilled players, and stay ahead of the competition by learning advanced tactics. Join our gaming community on YouTube to enhance your skills and share the joy of gaming with fellow enthusiasts.<br><br></p>
+				</td>
+				<td style="width: 7%"></td>
+				<td style="width: 31.5%" id="last-page-table">
+					<h2 style="text-align: center; position: static">
+						<a href="https://www.instagram.com/ahrjun_chess/" style="text-decoration: none; color: black">
+							<img src="image/instagram.png" alt="Image of Instagram Logo" style="max-width: 100px; margin-left: auto; margin-right: auto; border-radius: 25px">
+						</a>
+					</h2>
+					<h2 style="text-align: center; position: static">
+						<a href="https://www.instagram.com/ahrjun_chess/" style="text-decoration: none; color: black">
+							Instagram
+						</a>
+					</h2>
+					<p>Stay in the loop with our vibrant gaming community on Instagram! Follow us for timely notifications and remainders about upcoming tournaments, competitions, and special events. Get ready to showcase your skills and climb the ranks as we bring you the latest updates on player rankings. Engage with our Instagram community, stay informed, and never miss a chance to participate in thrilling gaming competitions. Let the excitement unfold on our Instagram page – your go-to destination for all things gaming and competition!</p>
+				</td>
+				<td style="width: 10%"></td>
+			</tr>
+		</table>
+
+    </div>
+    	<div id="tab_4" class="content" style="display: none">
+		<a href="https://drive.google.com/drive/folders/1ylKgewAsgyqv0ZflEMtxEo_IQLlWld6x?usp=drive_link">
+			<img src="image/first_page.png" alt="Image of Homepage" style="width: 100%; height: auto; cursor: default">
+			<div id="first-button">下载</div>
+		</a>
+    </div>
+    
+    <div id="tab_5" class="content" style="display: none">
+    	<table style="width: 100%">
+			<tr>
+				<td style="width: 13%"></td>
+				<td style="width: 70%">
+					<video width="100%" height="auto" controls autoplay muted>
+					  	<source src="image/chess_video.mp4" type="video/mp4">
+						您的浏览器不支持此视频文件类型。
+					</video>
+				</td>
+				<td style="width: 13%"></td>
+			</tr>
+		</table>
+		<table class="special-row">
+		    <tr>
+		        <td style="width: 10%"></td>
+		        <td style="width: 70%">
+		            <h2>布局棋盘</h2>
+		            <p class="list" style="text-align: justify">使用国际象棋棋盘，中央线将其分为两半，分别代表黑方和白方的胜利。玩家可以在两侧任意放置棋子。</p>
+		            <p class="list" style="text-align: justify; padding-bottom: 15px">在游戏开始时，三个黑子和三个白子被初始化。这种战略定位为随后的战术行动奠定了基础。</p>
+		        </td>
+		        <td style="width: 10%"></td>
+		    </tr>
+		    <tr style="background-color: white">
+		        <td style="width: 10%"></td>
+		        <td style="width: 70%">
+		            <h2>放置棋子</h2>
+		            <p class="list" style="text-align: justify">玩家不能随机放置棋子，必须有连接。</p>
+		            <p class="list" style="text-align: justify; padding-bottom: 15px">两种连接方式：对角线（没有距离限制，即使对手的棋子存在）和水平/垂直（需要在初始棋子旁边留出一个空位）。</p>
+		        </td>
+		        <td style="width: 10%"></td>
+		    </tr>
+		    <tr>
+		        <td style="width: 10%"></td>
+		        <td style="width: 70%">
+		            <h2>吃掉对手的棋子</h2>
+		            <p class="list" style="text-align: justify">通过放置棋子，可以吃掉对手的棋子，两者之间不留空隙。</p>
+		            <p class="list" style="text-align: justify; padding-bottom: 15px">与水平/垂直方式不同（一次一个），对角线方式需要连接两个或更多棋子，而且不能有间隙。</p>
+		        </td>
+		        <td style="width: 10%"></td>
+		    </tr>
+		    <tr style="background-color: white">
+		        <td style="width: 10%"></td>
+		        <td style="width: 70%">
+		            <h2>取胜规则</h2>
+		            <p class="list" style="text-align: justify">玩家通过从中心线连接到棋盘边缘而取胜。只有水平和垂直的连接才算胜利，对角线连接不算。</p>
+		            <p class="list" style="text-align: justify; padding-bottom: 15px">游戏以重复三次、棋子用完或者棋盘上的所有81个格子都被占满而结束。</p>
+		        </td>
+		        <td style="width: 10%"></td>
+		    </tr>
+		</table>
+    </div>
+    
+    <div id="tab_6" class="content" style="display: none">
+	  	<table style="width: 100%">		
+			<tr>
+				<td style="width: 10%"></td>
+				<td style="width: 31.5%" id="last-page-table">
+					<h2 style="text-align: center; position: static">
+						<a href="https://www.youtube.com/@Ahrjun_Chess" style="text-decoration: none; color: black">
+							<img src="image/youtube.png" alt="Image of YouTube Logo" style="max-width: 100px; margin-left: auto; margin-right: auto; border-radius: 25px">
+						</a>
+					</h2>
+					<h2 style="text-align: center; position: static">
+						<a href="https://www.youtube.com/@Ahrjun_Chess" style="text-decoration: none; color: black">
+							YouTube
+						</a>
+					</h2>
+					<p>我们的YouTube频道是我们游戏社区爱好者的全面枢纽。无论您是初学者寻找掌握游戏战术的教程，还是热衷玩家寻找激动人心的现实游戏玩法，我们的频道都能满足您的需求。沉浸在富有洞察力的教程中，见证技术娴熟的玩家进行令人激动的游戏，并通过学习先进的战术在竞争中保持领先地位。加入我们YouTube上的游戏社区，提升您的技能，并与其他爱好者分享游戏的乐趣。</p>
+				</td>
+				<td style="width: 7%"></td>
+				<td style="width: 31.5%" id="last-page-table">
+					<h2 style="text-align: center; position: static">
+						<a href="https://www.instagram.com/ahrjun_chess/" style="text-decoration: none; color: black">
+							<img src="image/instagram.png" alt="Image of Instagram Logo" style="max-width: 100px; margin-left: auto; margin-right: auto; border-radius: 25px">
+						</a>
+					</h2>
+					<h2 style="text-align: center; position: static">
+						<a href="https://www.instagram.com/ahrjun_chess/" style="text-decoration: none; color: black">
+							Instagram
+						</a>
+					</h2>
+					<p>保持与我们Instagram上充满活力的游戏社区保持联系！关注我们，获取有关即将举行的比赛，竞赛和特别活动的及时通知和提醒。准备好展示您的技能，并随着我们为您带来的有关玩家排名的最新更新，攀登榜单。与我们的Instagram社区互动，保持了解，永远不要错过参加激动人心的游戏比赛的机会。让兴奋在我们的Instagram页面中展开 - 这是您所有游戏和竞技活动的首选目的地！</p>
+				</td>
+				<td style="width: 10%"></td>
+			</tr>
+		</table>
+    </div>
+
+	
+	<script>
+		function openTab(evt, tabName) {
+		    var i, tabcontent, tablinks;
+		    tabcontent = document.getElementsByClassName("content");
+		    for (i = 0; i < tabcontent.length; i++) {
+		        tabcontent[i].style.display = "none";
+		    }
+		    tablinks = document.getElementsByClassName("tablinks");
+		    for (i = 0; i < tablinks.length; i++) {
+		        tablinks[i].className = tablinks[i].className.replace(" active", "");
+		    }
+		    document.getElementById(tabName).style.display = "block";
+		    evt.currentTarget.className += " active";
+		    document.querySelector(".progress-bar").style.width = "0%";
+		    window.scrollTo(0, 0);
+		}
+		
+		function switchLanguage(language) {
+		    if (language === 'chinese') {
+		        updateTabLinks(4, 'chinese');
+		        openTab(event, 'tab_4');
+		    }
+		}
+		
+		function updateTabLinks(startIndex, language) {
+		    var tabLinks = document.querySelectorAll('.tablinks');
+		    tabLinks.forEach(function (link, index) {
+		        link.classList.remove('active');
+		        var newTabIndex = startIndex + index;
+		        link.setAttribute('onclick', 'openTab(event, \'tab_' + newTabIndex + '\')');
+		    });
+		}
+
+	
+	    function updateProgressBar() {
+	        var winScroll = document.body.scrollTop || document.documentElement.scrollTop;
+	        var height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+	        var scrolled = (winScroll / height) * 100;
+	        document.querySelector(".progress-bar").style.width = scrolled + "%";
+	    }
+	
+	    window.onscroll = function () {
+	        updateProgressBar();
+	    };
+	
+	    function getRandomAlphabet() {
+	        var alphabets = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ';
+	        return alphabets[Math.floor(Math.random() * alphabets.length)];
+	    }
+	
+	    function rollCounter() {
+	        var counter = document.getElementById('counter');
+	        var rollingTimeout = 3000;
+	        var targetTimeout = 10000;
+	        var text = 'FOLLOW&SUBSCRIBE';
+	
+	        var startTime = Date.now();
+	        var currentIndex = 0;
+	        var timer = setInterval(function () {
+	            var elapsedTime = Date.now() - startTime;
+	            if (elapsedTime < rollingTimeout) {
+	                for (var i = 0; i <= 16; i++) {
+	                    counter.children[i].innerHTML = getRandomAlphabet();
+	                }
+	            } else if (elapsedTime < targetTimeout) {
+	                for (var i = 0; i <= 16; i++) {
+	                    counter.children[i].innerHTML = text[i];
+	                }
+	            } else {
+	                startTime = Date.now();
+	            }
+	        }, 100);
+	    }
+	    setTimeout(rollCounter, 0);
+	</script>
+</body>
+
+</html>
